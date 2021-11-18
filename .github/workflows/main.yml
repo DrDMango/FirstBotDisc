@@ -28,7 +28,6 @@ jobs:
         with:
           packages: |
             python-dotenv
-      - run: main.py
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
@@ -43,4 +42,3 @@ jobs:
         env:
           DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
           DISCORD_GUILD: ${{ secrets.DISCORD_GUILD }}
-          
